@@ -3,7 +3,7 @@ import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("BOT_TOKEN", "8800988574:AAGEsAuKAvWyyKm7r9C28vxKubOFwxIRndc")
 print(f"TOKEN = {TOKEN}")  # временно для отладки
 
 bot = Bot(token=TOKEN)
