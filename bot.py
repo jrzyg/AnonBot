@@ -2,10 +2,9 @@ import asyncio
 import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
-from dotenv import load_dotenv
 
-load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
+print(f"TOKEN = {TOKEN}")  # временно для отладки
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
